@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Dental Sonrisa · Zaragoza (web de demostración)</title>
+  <meta name="description" content="Web de demostración de una clínica dental ficticia en Zaragoza. Todos los datos son ejemplos pendientes de sustituir.">
+  <!-- Mientras sea una demo, pedimos a los buscadores que no la indexen. Borra esta línea al publicar la web real. -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- AVISO DE DEMOSTRACIÓN (bórralo cuando la web sea real) -->
+  <div class="aviso-demo" role="note">
+    <strong>Web de demostración.</strong> Clínica ficticia: los datos marcados como <span class="etiqueta-ejemplo">EJEMPLO</span> deben sustituirse.
+  </div>
+
+  <!-- CABECERA Y MENÚ -->
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a href="#inicio" class="logo" aria-label="Clínica Dental Sonrisa, ir al inicio">
+        <img src="img/logo.svg" alt="" width="36" height="36">
+        <span>Clínica Dental <strong>Sonrisa</strong></span>
+      </a>
+
+      <button class="menu-boton" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="menu" class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#tratamientos">Tratamientos</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="#contacto">Contacto</a>
+        <a href="tel:+34976000000" class="boton boton--pequeno" data-demo>Llamar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- INICIO -->
+    <section id="inicio" class="portada">
+      <div class="contenedor portada__fila">
+        <div class="portada__texto">
+          <p class="antetitulo">Clínica dental en Zaragoza</p>
+          <h1>Cuidamos tu sonrisa con cercanía y tranquilidad</h1>
+          <p class="portada__intro">
+            Texto de presentación de ejemplo: aquí la clínica explicará en dos o tres frases
+            quién es, cómo trabaja y qué la diferencia.
+            <span class="etiqueta-ejemplo">EJEMPLO</span>
+          </p>
+          <div class="botones">
+            <a href="tel:+34976000000" class="boton" data-demo>
+              <img src="img/icono-telefono.svg" alt="" width="20" height="20"> Llamar ahora
+            </a>
+            <a href="https://wa.me/34600000000" class="boton boton--whatsapp" data-demo>
+              <img src="img/icono-whatsapp.svg" alt="" width="20" height="20"> Escribir por WhatsApp
+            </a>
+          </div>
+          <p class="nota-demo">Los botones de llamar y WhatsApp son de demostración: usan números de ejemplo y no realizan ninguna llamada.</p>
+        </div>
+        <div class="portada__imagen">
+          <!-- IMAGEN DE MUESTRA: sustitúyela por una foto real de la clínica (ver README) -->
+          <img src="img/portada.svg" alt="Imagen de muestra: consulta dental" width="560" height="440">
+        </div>
+      </div>
+    </section>
+
+    <!-- VENTAJAS RÁPIDAS -->
+    <section class="ventajas" aria-label="Información práctica">
+      <div class="contenedor ventajas__rejilla">
+        <div class="ventaja">
+          <h3>Horario</h3>
+          <p>L–V: 9:00–14:00 y 16:00–20:00 <span class="etiqueta-ejemplo">EJEMPLO</span></p>
+        </div>
+        <div class="ventaja">
+          <h3>Ubicación</h3>
+          <p>Calle de Ejemplo, 00 · 50000 Zaragoza <span class="etiqueta-ejemplo">EJEMPLO</span></p>
+        </div>
+        <div class="ventaja">
+          <h3>Primera visita</h3>
+          <p>Condiciones de la primera visita a definir por la clínica <span class="etiqueta-ejemplo">EJEMPLO</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRATAMIENTOS -->
+    <section id="tratamientos" class="seccion">
+      <div class="contenedor">
+        <p class="antetitulo">Tratamientos</p>
+        <h2>¿En qué podemos ayudarte?</h2>
+        <p class="seccion__intro">
+          Lista orientativa. La clínica debe revisar qué tratamientos ofrece realmente y cómo describirlos.
+          <span class="etiqueta-ejemplo">EJEMPLO</span>
+        </p>
+
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <img src="img/icono-revision.svg" alt="" width="48" height="48">
+            <h3>Revisión y limpieza</h3>
+            <p>Revisión general de la boca y limpieza dental profesional.</p>
+          </article>
+          <article class="tarjeta">
+            <img src="img/icono-ortodoncia.svg" alt="" width="48" height="48">
+            <h3>Ortodoncia</h3>
+            <p>Corrección de la posición de los dientes con brackets o alineadores.</p>
+          </article>
+          <article class="tarjeta">
+            <img src="img/icono-implante.svg" alt="" width="48" height="48">
+            <h3>Implantes dentales</h3>
+            <p>Reposición de piezas dentales perdidas.</p>
+          </article>
+          <article class="tarjeta">
+            <img src="img/icono-estetica.svg" alt="" width="48" height="48">
+            <h3>Estética dental</h3>
+            <p>Blanqueamiento y otros tratamientos para mejorar el aspecto de la sonrisa.</p>
+          </article>
+          <article class="tarjeta">
+            <img src="img/icono-infantil.svg" alt="" width="48" height="48">
+            <h3>Odontopediatría</h3>
+            <p>Atención dental adaptada a niños y niñas.</p>
+          </article>
+          <article class="tarjeta">
+            <img src="img/icono-urgencia.svg" alt="" width="48" height="48">
+            <h3>Urgencias</h3>
+            <p>Atención de dolor o problemas que no pueden esperar, según disponibilidad.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section id="equipo" class="seccion seccion--verde">
+      <div class="contenedor">
+        <p class="antetitulo">Equipo</p>
+        <h2>Las personas que te atenderán</h2>
+        <p class="seccion__intro">
+          Nombres, funciones y fotos de ejemplo. La clínica debe añadir los datos reales de su equipo
+          (y, si lo desea, su formación y número de colegiado verificables).
+          <span class="etiqueta-ejemplo">EJEMPLO</span>
+        </p>
+
+        <div class="equipo">
+          <article class="persona">
+            <img src="img/persona-1.svg" alt="Foto de muestra de un miembro del equipo" width="160" height="160">
+            <h3>Nombre Apellido</h3>
+            <p class="persona__cargo">Odontología general</p>
+            <span class="etiqueta-ejemplo">EJEMPLO</span>
+          </article>
+          <article class="persona">
+            <img src="img/persona-2.svg" alt="Foto de muestra de un miembro del equipo" width="160" height="160">
+            <h3>Nombre Apellido</h3>
+            <p class="persona__cargo">Ortodoncia</p>
+            <span class="etiqueta-ejemplo">EJEMPLO</span>
+          </article>
+          <article class="persona">
+            <img src="img/persona-3.svg" alt="Foto de muestra de un miembro del equipo" width="160" height="160">
+            <h3>Nombre Apellido</h3>
+            <p class="persona__cargo">Higiene dental</p>
+            <span class="etiqueta-ejemplo">EJEMPLO</span>
+          </article>
+          <article class="persona">
+            <img src="img/persona-4.svg" alt="Foto de muestra de un miembro del equipo" width="160" height="160">
+            <h3>Nombre Apellido</h3>
+            <p class="persona__cargo">Recepción y atención al paciente</p>
+            <span class="etiqueta-ejemplo">EJEMPLO</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section id="preguntas" class="seccion">
+      <div class="contenedor contenedor--estrecho">
+        <p class="antetitulo">Preguntas frecuentes</p>
+        <h2>Resolvemos tus dudas</h2>
+        <p class="seccion__intro">
+          Respuestas de ejemplo: la clínica debe revisarlas y adaptarlas antes de publicar.
+          <span class="etiqueta-ejemplo">EJEMPLO</span>
+        </p>
+
+        <div class="preguntas">
+          <details>
+            <summary>¿Cómo pido cita?</summary>
+            <p>Puedes llamarnos por teléfono o escribirnos por WhatsApp en el horario de la clínica. (Texto de ejemplo.)</p>
+          </details>
+          <details>
+            <summary>¿Cuánto cuesta la primera visita?</summary>
+            <p>La clínica indicará aquí sus condiciones para la primera visita. (Pendiente de completar.)</p>
+          </details>
+          <details>
+            <summary>¿Trabajáis con seguros dentales?</summary>
+            <p>Aquí se indicará con qué compañías trabaja la clínica, si es el caso. (Pendiente de completar.)</p>
+          </details>
+          <details>
+            <summary>¿Ofrecéis financiación?</summary>
+            <p>Aquí se explicarán las opciones de pago disponibles, si las hay. (Pendiente de completar.)</p>
+          </details>
+          <details>
+            <summary>¿Qué hago si tengo una urgencia?</summary>
+            <p>Llámanos y te indicaremos cuándo podemos atenderte. Fuera de horario, aquí se indicará qué hacer. (Texto de ejemplo.)</p>
+          </details>
+          <details>
+            <summary>¿Atendéis a niños?</summary>
+            <p>Aquí se indicará a partir de qué edad atiende la clínica y cómo es la primera visita infantil. (Pendiente de completar.)</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion seccion--verde">
+      <div class="contenedor contacto">
+        <div>
+          <p class="antetitulo">Contacto</p>
+          <h2>Ven a vernos</h2>
+
+          <ul class="datos-contacto">
+            <li>
+              <img src="img/icono-ubicacion.svg" alt="" width="24" height="24">
+              <span>Calle de Ejemplo, 00 · 50000 Zaragoza <span class="etiqueta-ejemplo">EJEMPLO</span></span>
+            </li>
+            <li>
+              <img src="img/icono-telefono-verde.svg" alt="" width="24" height="24">
+              <span>976 00 00 00 <span class="etiqueta-ejemplo">EJEMPLO</span></span>
+            </li>
+            <li>
+              <img src="img/icono-whatsapp-verde.svg" alt="" width="24" height="24">
+              <span>600 00 00 00 <span class="etiqueta-ejemplo">EJEMPLO</span></span>
+            </li>
+            <li>
+              <img src="img/icono-email.svg" alt="" width="24" height="24">
+              <span>info@ejemplo.com <span class="etiqueta-ejemplo">EJEMPLO</span></span>
+            </li>
+            <li>
+              <img src="img/icono-reloj.svg" alt="" width="24" height="24">
+              <span>L–V: 9:00–14:00 y 16:00–20:00 <span class="etiqueta-ejemplo">EJEMPLO</span></span>
+            </li>
+          </ul>
+
+          <div class="botones">
+            <a href="tel:+34976000000" class="boton" data-demo>
+              <img src="img/icono-telefono.svg" alt="" width="20" height="20"> Llamar
+            </a>
+            <a href="https://wa.me/34600000000" class="boton boton--whatsapp" data-demo>
+              <img src="img/icono-whatsapp.svg" alt="" width="20" height="20"> WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="caja-pendiente">
+          <h3>Formulario de contacto: pendiente</h3>
+          <p>
+            Esta demo <strong>no recoge datos personales</strong>. Aquí podrá ir un formulario
+            o un sistema de citas cuando se conecte, con su aviso de privacidad y su casilla de
+            consentimiento, como exige la normativa de protección de datos.
+          </p>
+          <p class="caja-pendiente__mapa">
+            <img src="img/icono-ubicacion.svg" alt="" width="20" height="20">
+            Aquí puede ir un mapa de Google Maps con la ubicación real.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie">
+    <div class="contenedor pie__fila">
+      <p>© Clínica Dental Sonrisa · Zaragoza · <span class="etiqueta-ejemplo">EJEMPLO</span></p>
+      <nav aria-label="Textos legales">
+        <a href="#" data-demo-legal>Aviso legal</a>
+        <a href="#" data-demo-legal>Privacidad</a>
+        <a href="#" data-demo-legal>Cookies</a>
+      </nav>
+      <p class="pie__nota">Web de demostración de una clínica ficticia. Los textos legales están pendientes de redactar.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP (móvil) -->
+  <a href="https://wa.me/34600000000" class="whatsapp-flotante" data-demo aria-label="Escribir por WhatsApp (demostración)">
+    <img src="img/icono-whatsapp.svg" alt="" width="28" height="28">
+  </a>
+
+  <!-- Mensaje que aparece al pulsar un botón de demostración -->
+  <div class="aviso-flotante" role="status" aria-live="polite" hidden></div>
+
+  <script src="js/principal.js"></script>
+</body>
+</html>
